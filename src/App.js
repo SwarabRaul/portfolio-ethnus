@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Portfolio from "./Portfolio";
+import AboutMe from "./AboutMe";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My Portfolio</h1>
+      <AboutMe />
+      <Portfolio />
+      <p className="dummy-message">This is a dummy website created for an assignment.</p>
+      <a className="back-button" href="https://swarabraul.github.io/React-Ethnus-IndexPage/">Back to Index Page</a>
     </div>
   );
 }
